@@ -6,7 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page__body">
+<body class="page-body">
     <header class="header">
         <a href="" class="header__logo">
             <img src="./img/cat-energy-logo-pic.png" alt="Cat Energy logo" width="33" height="40">
@@ -46,7 +46,7 @@
                     <img src="" alt="Cat Energy Slim" class="types__pic" width="50" height="53">
                     <h3 class="types__name"> Похудение</h3>
                     <div class="types__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</div>
-                    <a href="" class="type__catalog">
+                    <a href="" class="types__catalog">
                         <span>Каталог Slim </span>
                         <svg class="" width="" height=""></svg>
                     </a>
@@ -55,7 +55,7 @@
                     <img src="" alt="Cat Energy Pro" class="types__pic" width="67" height="50">
                     <h3 class="types__name"> Набор массы </h3>
                     <div class="types__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</div>
-                    <a href="" class="type__catalog">
+                    <a href="" class="types__catalog">
                         <span>Каталог Pro </span>
                         <svg class="" width="" height=""></svg>
                     </a>
@@ -95,7 +95,7 @@
 
         <section class="example">
             <h2 class="example__heading"> Живой пример</h2>
-            <div class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </div>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
             <div class="example__stats stats">
                 <ul class="stats__list">
                     <li class="stats__item">
@@ -116,6 +116,7 @@
 
         </section>
         <section class="location">
+            <h2 class="visually-hidden"> Адреc Cat Energy </h2>
             <div class="location__text">
                 <p class="location__invitation">
                     приглашаем к сотрудничеству дилеров!
@@ -130,27 +131,33 @@
     </main>
     <footer class="footer">
         <img src="" alt="" class="footer__cat-energy-logo" width="" height="">
-        <ul class="footer__socials socials-list">
-            <li class="socials__item">
-                <a class="button" href="#">
-                    <span class="visually-hidden">ВКонтакте</span>
-                </a>
-            </li>
-            <li class="socials__item">
-                <a class="button" href="#">
-                    <span class="visually-hidden">Instagram</span>
-                </a>
-            </li>
-            <li class="socials__item">
-                <a class="button" href="#">
-                    <span class="visually-hidden">Facebook</span>
-                </a>
-            </li>
-        </ul>
-        <a class="footer__academy">
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+              <li class="socials__item">
+                  <a class="button" href="#">
+                      <span class="visually-hidden">ВКонтакте</span>
+                  </a>
+              </li>
+              <li class="socials__item">
+                  <a class="button" href="#">
+                      <span class="visually-hidden">Instagram</span>
+                  </a>
+              </li>
+              <li class="socials__item">
+                  <a class="button" href="#">
+                      <span class="visually-hidden">Facebook</span>
+                  </a>
+              </li>
+          </ul>
+        </div>
+        <div class="footer__academy academy">
+          <a href="" class="academy__text-link">
             <span> HTML Academy </span>
+          </a>
+          <a href="" class="academy__logo-link">
             <img src="img/htmlacademy.svg" alt="" class="academy-logo" width="27" height="34">
-        </a>
+          </a>
+        </div>
     </footer>
 
 </body>
