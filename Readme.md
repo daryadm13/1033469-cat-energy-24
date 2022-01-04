@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Дарья Козлова](https://up.htmlacademy.ru/adaptive/24/user/1033469).
-* Наставник: `Микаел Магтесян`.
+* Студент: [Дарья Козлова](https://htmlacademy.ru/profile/daryadm).
+* Наставник: [Микаел Магтесян](https://htmlacademy.ru/profile/id1100875).
 
 ---
 
