@@ -11,13 +11,15 @@
     <header class="header">
       <a href="" class="header__logo">
         <img src="./img/cat-energy-logo-pic.png" alt="Cat Energy logo" width="33" height="40">
+      </a>
+      <a href="" class="header__logo">
         <img src="img/cat-energy-logo-text.png" alt="Cat Energy" width="101" height="18">
       </a>
-      <nav class="main-nav">
+      <nav class="header__main-nav main-nav">
         <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-        <div class="main-nav__wrapper">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href=index.html""> Главная </a>
@@ -33,13 +35,13 @@
       </nav>
     </header>
     <main class="form">
-      <h1 class="form__headingg">
+      <h1 class="form__heading">
         Подбор программы
       </h1>
       <p class="form__instruction">
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
-      <form class="form__filter" action="https://echo.htmlacademy.ru/" method = "post>
+      <form class="for.m__filter" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__filter-group filter-group">
           <legend class="filter-group__title visually-hidden">Животное</legend>
           <ul class="filter-group__list">
@@ -68,7 +70,7 @@
           <ul class="filter-group__list">
             <li class="filter-group__item filter">
               <label class="filter__name radio-filter">
-                <input class="visually-hidden  radio-filter__input" type="radio" name="slim" checked>
+                <input class="visually-hidden radio-filter__input" type="radio" name="slim" checked>
                 <span class="radio-filter__mark"></span>
                 <span class="radio-filter__name">Похудение</span>
               </label>
@@ -148,7 +150,7 @@
           </ul>
         </fieldset>
         <input type="submit" class="button form__button" value="Отправить заявку">
-        <p>* - Обязательные поля</p>
+        <p class="form__star">* - Обязательные поля</p>
       </form>
     </main>
     <footer class="footer">
