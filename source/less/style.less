@@ -1,3 +1,5 @@
+@import "fonts.less";
+@import "variables.less";
 @import "header.less";
 @import "footer.less";
 @import "button.less";
@@ -23,30 +25,11 @@
 @import "checkbox-filter.less";
 @import "visually-hidden.less";
 
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-
-@basic_green: #68B738;
-@white: #ffffff;
-@basic_grey: #F2F2F2;
-
 body {
   background-color: @white;
   width: 320px;
   padding: 0;
+  font-family: "Oswald", sans-serif;
 }
 
 .main {
