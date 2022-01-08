@@ -13,3 +13,32 @@
 .filter__input {
   padding: 13px 15px;
 }
+
+.filter__input::-webkit-input-placeholder {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special_dark-grey;
+  min-width: none;
+}
+
+.filter__wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.filter__pic {
+  position: absolute;
+  left: 265px;
+  margin-top: 10px;
+}
+
+.filter__input--comment {
+  width: 100%;
+  min-height: 150px;
+}
