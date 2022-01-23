@@ -3,12 +3,18 @@
   text-align: center;
 }
 
+.show-more__img {
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+
 .show-more__header {
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  font-size: 15.4px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  margin-bottom: 0;
 }
 
 .show-more__text {
@@ -16,4 +22,23 @@
   font-size: 12px;
   line-height: 16px;
   color: @special_dark-grey;
+  margin-top: 8px;
+  margin-bottom: 21px;
+
+}
+
+.show-more__button {
+  background-color: @basic_grey;
+  color: #000000;
+
+  &:hover {
+    background-color: @special_grey-2;
+    color: #000000;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @special_grey-2;
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

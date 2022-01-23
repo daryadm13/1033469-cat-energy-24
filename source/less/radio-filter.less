@@ -1,3 +1,31 @@
 .radio-filter {
   background: none;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.radio-filter__name {
+  padding-left: 45px;
+}
+
+.radio-filter__mark {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border: 1px solid #CDCDCD;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.radio-filter__input:checked + .radio-filter__mark::before {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background-color: @basic_green;
+  border-radius: 50%;
+  content: "";
 }
