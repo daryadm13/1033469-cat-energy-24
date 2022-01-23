@@ -19,8 +19,8 @@
 
 .stats__number-wrapper {
   display: flex;
-  height: 56px;
-  width: 122px;
+  min-height: 56px;
+  min-width: 122px;
   border: 1px solid @special_grey;
   border-radius: 3px;
 }
@@ -56,4 +56,39 @@
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .stats__list {
+    gap: 42px;
+  }
+
+  .stats__number-wrapper {
+    min-width: 162px;
+    min-height: 72px;
+  }
+
+  .stats__number {
+    font-size: 30px;
+  }
+
+  .stats__explanation {
+    width: max-content;
+    padding: 0 8px;
+    background-color: @white;
+    font-size: 14px;
+    line-height: 14px;
+    left: unset;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stats__cost {
+    margin-top: 6px;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 30px;
+    width: 175px;
+    text-align: right;
+  }
 }

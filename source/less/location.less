@@ -15,6 +15,7 @@
 .location__text--inner {
   background-color: #F2F2F2;;
 }
+
 .location__invitation {
   min-width: 139px;
   margin-top: 0;
@@ -42,3 +43,26 @@
   margin: 0;
   margin-bottom: -5px;
 }
+
+@media (min-width: @tablet-width) {
+  .location__text {
+    padding: 58px 70px;
+    justify-content: space-between;
+  }
+
+  .location__invitation {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
+
+  .location__address {
+    width: 160px;
+    text-align: right;
+  }
+
+  .location__map {
+    height: 400px;
+  }
+}
+

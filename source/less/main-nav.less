@@ -20,12 +20,14 @@
   top: 65px;
   background-color: @white;
   width: 100%;
+  margin-top: -10px;
 }
 
 .main-nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: ;
 }
 
 .main-nav__item {
@@ -60,7 +62,7 @@
   }
 }
 
-/*
+
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     display: none;
@@ -72,10 +74,17 @@
 
   .main-nav__list {
     display: flex;
-    gap: 34px;
+    gap: 36px;
+  }
+
+  .main-nav__link {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .main-nav__item {
+    padding: 26px 0 8px 0;
     border: none;
   }
 
@@ -83,4 +92,3 @@
     border-bottom: 2px solid @basic_green;
   }
 }
-*/
