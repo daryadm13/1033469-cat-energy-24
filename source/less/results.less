@@ -1,3 +1,49 @@
 .results {
   background: none;
 }
+
+.results__slider {
+  height: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.results__pic {
+  margin-bottom: 12px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .results {
+    background: #eaeaea;
+    height: 462px;
+    text-align: center;
+  }
+
+  .results__pic {
+    position: relative;
+    top: -170px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .results {
+    width: 100%;
+    z-index: -1;
+  }
+
+  .results__pic {
+    position: relative;
+    top: -180px;
+    left: 200px;
+  }
+
+  .results__slider {
+    display: none;
+  }
+}

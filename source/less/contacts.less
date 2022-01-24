@@ -1,5 +1,57 @@
 .contacts {
   background-color: @basic_grey;
   margin: 0;
-  padding: 22px 20px 36px 20px;
+  padding: 39px 20px 0 20px;
+}
+
+.contacts__logo {
+  display: block;
+  padding-bottom: 24px;
+}
+
+.contacts__logo-pic {
+  padding: 0;
+  margin: 0;
+  stroke: @special_grey-3;
+  fill: @special_grey-3;
+  color: @special_dark-grey;
+}
+
+.contacts__link {
+  &:hover .contacts__logo-pic {
+    fill: @basic_green;
+    stroke: @basic_green;
+    color: @special_dark-grey;
+  }
+
+  &:active .contacts__logo-pic {
+    opacity: 0.3;
+  }
+}
+
+.contacts__academy {
+  min-height: 78px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 58px 30px 55px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__logo {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .contacts__academy {
+    min-height: unset;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    padding: 57px 110px 58px 110px;
+  }
 }

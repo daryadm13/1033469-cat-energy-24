@@ -4,14 +4,22 @@
 }
 
 .location__text {
-  padding: 26px;
+  margin: 0;
+  padding: 26px 20px;
   display: flex;
   align-items: center;
-  gap: 15px;
   text-align: left;
+  gap: 2px;
+}
+
+.location__text--inner {
+  background-color: #f2f2f2;
 }
 
 .location__invitation {
+  min-width: 139px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -20,6 +28,8 @@
 }
 
 .location__address {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -29,4 +39,45 @@
 
 .location__map {
   background: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: -5px;
+}
+
+@media (min-width: @tablet-width) {
+  .location__text {
+    padding: 58px 70px;
+    justify-content: space-between;
+  }
+
+  .location__invitation {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
+
+  .location__address {
+    width: 160px;
+    text-align: right;
+  }
+
+  .location__map {
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location {
+    position: relative;
+  }
+
+  .location__text {
+    min-width: 405px;
+    min-height: 82px;
+    padding: 58px 80px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: @white;
+  }
 }

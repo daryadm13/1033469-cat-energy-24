@@ -2,7 +2,8 @@
   display: flex;
   margin: 0;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 19px 20px 24px 20px;
+  align-items: center;
   border-bottom: 1px solid @special_grey-2;
 }
 
@@ -14,6 +15,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @special_dark-grey-2;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .product__img {
@@ -36,10 +39,14 @@
   color: @special_dark-grey;
 }
 
+.product__properties td {
+  padding: 0;
+}
+
 .product__properties td:nth-child(2) {
   text-align: right;
 }
 
 .product__order {
-  margin: 13px 0 5px 0;
+  margin: 13px 0 0 0;
 }

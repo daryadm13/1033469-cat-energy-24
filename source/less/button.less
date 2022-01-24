@@ -12,4 +12,15 @@
   text-transform: uppercase;
   border: none;
   text-decoration: none;
+
+  &:hover {
+    background-color: @basic_green-2;
+    color: @white;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @basic_green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

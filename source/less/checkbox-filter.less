@@ -1,3 +1,26 @@
 .checkbox-filter {
   background: none;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-filter__name {
+  padding-left: 45px;
+}
+
+.checkbox-filter__mark {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  position: absolute;
+}
+
+.checkbox-filter__input:checked + .checkbox-filter__mark {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 14px;
 }

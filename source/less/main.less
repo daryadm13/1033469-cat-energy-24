@@ -1,3 +1,15 @@
 .main {
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main {
+    padding: 0;
+    padding-top: 48px;
+    gap: 0;
+  }
 }

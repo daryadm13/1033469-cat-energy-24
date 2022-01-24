@@ -1,6 +1,7 @@
 .filter {
   text-transform: uppercase;
   margin-top: 10px;
+  padding: 0;
 }
 
 .filter__name {
@@ -8,10 +9,6 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special_dark-grey;
-}
-
-.filter__input {
-  padding: 13px 15px;
 }
 
 .filter__input::-webkit-input-placeholder {
@@ -30,15 +27,21 @@
   grid-template-columns: max-content 1fr;
   gap: 12px;
   align-items: center;
+  position: relative;
+}
+
+.filter__input {
+  min-width: 0;
+  padding: 13px 15px 13px 15px;
+  border: 1px solid #e7e7e7;
 }
 
 .filter__pic {
   position: absolute;
-  left: 265px;
-  margin-top: 10px;
+  left: 246px;
 }
 
 .filter__input--comment {
-  width: 100%;
   min-height: 150px;
+  width: 250px;
 }
