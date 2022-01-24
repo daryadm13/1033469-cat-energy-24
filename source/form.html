@@ -21,16 +21,16 @@
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper visually-hidden">
+          <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="index.html" class="main-nav__link"> Главная </a>
+                <a href="index.html" class="main-nav__link  main-nav__link--inner"> Главная </a>
               </li>
               <li class="main-nav__item">
-                <a href="catalog.html" class="main-nav__link"> Каталог продукции </a>
+                <a href="catalog.html" class="main-nav__link main-nav__link--inner"> Каталог продукции </a>
               </li>
               <li class="main-nav__item main-nav__item--current">
-                <a href="form.html" class="main-nav__link"> Подбор программы </a>
+                <a href="form.html" class="main-nav__link main-nav__link--inner"> Подбор программы </a>
               </li>
             </ul>
           </div>
@@ -103,7 +103,6 @@
         <fieldset class="form__filter-group filter-group">
           <div class="filter-group__title-wrapper">
             <legend class="filter-group__title">Контактные данные<br>(владельца кота)</legend>
-            <span class="filter-group__title--decorate"></span>
           </div>
           <ul class="filter-group__list">
             <li class="filter-group__item filter">
@@ -146,7 +145,6 @@
         <fieldset class="form__filter-group filter-group">
           <div class="filter-group__title-wrapper">
             <legend class="filter-group__title">Комментарий</legend>
-            <span class="filter-group__title--decorate"></span>
           </div>
           <div class="filter">
             <label class="filter__name">
@@ -155,8 +153,11 @@
           </div>
         </fieldset>
         <fieldset class="form__filter-group filter-group">
-          <legend class="filter-group__title visually-hidden">Дополнительно</legend>
-          <ul class="filter-group__list">
+
+          <div class="filter-group__title-wrapper">
+            <legend class="filter-group__title">Дополнительно</legend>
+          </div>
+          <ul class="filter-group__list filter-group__list--additional">
             <li class="filter-group__item filter">
               <label class="filter__name checkbox-filter">
                 <input class="visually-hidden checkbox-filter__input" type="checkbox" name="sugar" checked>
