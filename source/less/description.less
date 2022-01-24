@@ -35,6 +35,10 @@
   line-height: 18px;
 }
 
+.description__number {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .description {
     padding: 0 30px;
@@ -58,6 +62,7 @@
     flex-direction: column;
     gap: 30px;
     padding: 40px 0 57px 0;
+    position: relative;
   }
 
   .description__item-pic {
@@ -69,5 +74,28 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 245px;
+  }
+
+  .description__number {
+    display: unset;
+    font-size: 280px;
+    line-height: 280px;
+    color: @basic_grey;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 113px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .description {
+    padding: 0 110px;
+  }
+
+  .description__list {
+    display: flex;
+    gap: 80px;
   }
 }

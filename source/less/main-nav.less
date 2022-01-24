@@ -70,6 +70,7 @@
 
   .main-nav__wrapper {
     position: static;
+    background: none;
   }
 
   .main-nav__list {
@@ -90,5 +91,17 @@
 
   .main-nav__item--current {
     border-bottom: 2px solid @basic_green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: @white;
+  }
+
+  .main-nav__item--current {
+    border-color: @white;
   }
 }

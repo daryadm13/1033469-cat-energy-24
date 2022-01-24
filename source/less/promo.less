@@ -79,3 +79,43 @@
 */
   }
 }
+
+@media (min-width: @desktop-width) {
+  .promo {
+    padding: 0 190px;
+    min-height: 560px;
+    background: none;
+  }
+
+  .promo__heading {
+    padding-left: 0;
+  }
+
+  .promo__heading:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 720px;
+    height: 694px;
+    right: 0;
+    top: -136px;
+    background-image: url(../img/desktop-promo-background.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+  }
+
+  .promo__slogan {
+    padding-left: 0;
+  }
+
+  .promo__pic {
+    position: absolute;
+    top: 0;
+    right: 220px;
+  }
+
+  .promo__button {
+    left: 190px;
+  }
+}

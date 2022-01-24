@@ -104,7 +104,9 @@
   .types__list {
     gap: 30px;
   }
+}
 
+@media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
   .types__item {
     display: block;
     padding: 77px 316px 57px 52px;
@@ -144,6 +146,20 @@
   .types__arrow {
     margin-left: 25px;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .types {
+    padding: 0 110px;
+    margin-top: 82px;
+  }
 
+  .types__list {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .types__item {
+    padding: 47px 52px 59px 52px;
+  }
 }
