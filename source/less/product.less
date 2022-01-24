@@ -110,3 +110,29 @@
     margin: unset;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .product--other {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .product__img {
+    left: 42px;
+  }
+
+  .product__order--other {
+    width: 244px;
+  }
+
+  .product__properties--other td:nth-child(1) {
+    min-width: 244px;
+    text-align: left;
+  }
+
+  .product__properties--other td:nth-child(2) {
+    min-width: 82px;
+    text-align: left;
+  }
+}
