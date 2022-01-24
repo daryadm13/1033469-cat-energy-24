@@ -29,3 +29,46 @@
 .other-products .button {
   margin-top: 12px;
 }
+
+@media (min-width: @tablet-width) {
+  .other-products {
+    margin-top: 68px;
+    position: relative;
+    padding: 0 30px;
+  }
+
+  .other-products__list {
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+    padding: 0;
+    border: 1px solid #cdcdcd;
+  }
+
+  .other-products__item {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 26px 38px 28px 38px;
+    display: flex;
+  }
+
+  .other-products__header {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 37px;
+    background-color: @white;
+    border: none;
+    width: max-content;
+  }
+
+  .other-products::after {
+    display: block;
+    width: @tablet-width;
+    height: 2px;
+    background-color: @basic_green;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    z-index: -1;
+  }
+}
