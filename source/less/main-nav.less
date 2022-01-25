@@ -29,7 +29,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: @white;
 }
 
 .main-nav__item {
@@ -97,6 +96,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    background: none;
+  }
+
   .main-nav__link--main {
     font-size: 20px;
     line-height: 30px;
