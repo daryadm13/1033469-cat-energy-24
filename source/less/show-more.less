@@ -1,11 +1,15 @@
 .show-more {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .show-more__img {
   margin-top: 6px;
   margin-bottom: 3px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .show-more__header {
@@ -39,5 +43,29 @@
   &:focus {
     background-color: @special_grey-2;
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .show-more {
+    background-color: @white;
+    border: 2px solid #f2f2f2;
+  }
+
+  .show-more__header {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: normal;
+    width: 150px;
+  }
+
+  .show-more__text {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+  }
+
+  .show-more__img {
+    position: unset;
   }
 }

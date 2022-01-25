@@ -29,3 +29,21 @@
   border-radius: 50%;
   content: "";
 }
+
+@media (min-width: @tablet-width) {
+  .radio-filter__mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .radio-filter__input:checked + .radio-filter__mark::before {
+    width: 18px;
+    height: 18px;
+    left: 10px;
+    top: 10px;
+  }
+
+  .radio-filter__name {
+    padding-left: 60px;
+  }
+}

@@ -28,6 +28,7 @@
 
 .form__filter {
   margin: 0;
+  position: relative;
 }
 
 .form__star {
@@ -39,4 +40,61 @@
 
 .form__wrapper {
   padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__heading {
+    padding: 0 70px;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form__instruction {
+    padding: 0 70px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__wrapper {
+    padding: 0 70px;
+    display: flex;
+    gap: 60px;
+    margin-bottom: 72px;
+  }
+
+  .form__button {
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .form__star {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__heading {
+    padding: 0 110px;
+  }
+
+  .form__instruction {
+    padding: 0 110px;
+  }
+
+  .form__wrapper {
+    padding: 0 110px;
+    margin-bottom: 82px;
+    gap: 81px;
+  }
+
+  .form__button {
+    width: 568px;
+  }
 }

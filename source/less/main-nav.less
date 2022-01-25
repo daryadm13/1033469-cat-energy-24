@@ -24,6 +24,8 @@
 }
 
 .main-nav__list {
+  position: relative;
+  z-index: 2;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -94,13 +96,17 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__link {
+  .main-nav__wrapper {
+    background: none;
+  }
+
+  .main-nav__link--main {
     font-size: 20px;
     line-height: 30px;
     color: @white;
   }
 
-  .main-nav__item--current {
+  .main-nav__item--main-current {
     border-color: @white;
   }
 }

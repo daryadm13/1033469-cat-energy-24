@@ -1,7 +1,8 @@
 .filter {
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 14px;
   padding: 0;
+  position: relative;
 }
 
 .filter__name {
@@ -38,10 +39,38 @@
 
 .filter__pic {
   position: absolute;
-  left: 246px;
+  right: 10px;
 }
 
 .filter__input--comment {
   min-height: 150px;
   width: 250px;
+}
+
+@media (min-width: @tablet-width) {
+  .filter {
+    margin-top: 20px;
+  }
+
+  .filter__input--comment {
+    min-height: 150px;
+    width: 590px;
+  }
+
+  .filter__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .filter__input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter__input--comment {
+    min-height: 150px;
+    width: 1180px;
+  }
 }
