@@ -54,6 +54,7 @@
         }
       });
     </script>
+
     <main class="main form">
       <h1 class="form__heading">
         Подбор программы
@@ -119,7 +120,7 @@
         </fieldset>
         <fieldset class="form__filter-group filter-group">
           <div class="filter-group__title-wrapper">
-            <legend class="filter-group__title">Контактные данные<br>(владельца кота)</legend>
+            <legend class="filter-group__title">Контактные данные (владельца кота)</legend>
           </div>
           <ul class="filter-group__list">
             <li class="filter-group__item filter">
@@ -192,7 +193,7 @@
             <li class="filter-group__item filter">
               <label class="filter__name checkbox-filter">
                 <input class="visually-hidden checkbox-filter__input" type="checkbox" name="milk">
-                <span class="checkbox-filter__mark"></span>s
+                <span class="checkbox-filter__mark"></span>
                 <span class="checkbox-filter__name">Молоко</span>
               </label>
             </li>
@@ -207,7 +208,7 @@
         </fieldset>
         <div class="form__wrapper">
           <input type="submit" class="button form__button" value="Отправить заявку">
-          <p class="form__star">* - Обязательные поля</p>
+          <p class="form__star">* &#8212; Обязательные поля</p>
         </div>
       </form>
     </main>
@@ -220,7 +221,12 @@
             приглашаем <br> к сотрудничеству дилеров!
           </p>
           <address class="location__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            <span>
+              ул. Большая Конюшенная, д. 19/8
+            </span>
+            <span>
+              Санкт-Петербург
+            </span>
           </address>
         </div>
         <img class="location__map" src="img/location.jpg" alt="Cat Energy на карте" width="320" height="362">
