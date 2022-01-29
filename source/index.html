@@ -7,7 +7,6 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body class="page-body">
     <header class="header">
       <div class="header__wrapper">
@@ -17,7 +16,7 @@
         <a href="" class="header__logo cat-energy-logo">
           <img src="img/cat-energy-logo-text.png" alt="Cat Energy" class="header__logo-text" width="101" height="18">
         </a>
-        <nav class="header__main-nav main-nav">
+        <nav class="header__main-nav main-nav main-nav--opened main-nav--js">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -37,6 +36,24 @@
         </nav>
       </div>
     </header>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
+
     <main class="main">
       <section class="promo">
         <h1 class="promo__heading">Функциональное<br>питание для котов</h1>
@@ -116,7 +133,7 @@
               <span class="stats__explanation">затрачено времени</span>
             </li>
           </ul>
-          <p class="stats__cost">Затраты на питание: 15 000 РУБ. </p>
+          <p class="stats__cost"> <span>Затраты на питание:</span> <span>15 000 РУБ.</span> </p>
         </div>
         <div class="example__results results">
           <img src="img/example-cat.png" alt="Кот Борис" class="results__pic" width="280" height="232">
@@ -135,7 +152,12 @@
             приглашаем <br> к сотрудничеству дилеров!
           </p>
           <address class="location__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            <span>
+              ул. Большая Конюшенная, д. 19/8
+            </span>
+            <span>
+              Санкт-Петербург
+            </span>
           </address>
         </div>
         <img class="location__map" src="img/location.jpg" alt="Cat Energy на карте" width="320" height="362">

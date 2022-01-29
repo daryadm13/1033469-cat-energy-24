@@ -1,13 +1,16 @@
 .filter-group {
   border: none;
   margin: 0;
-  padding: 25px 20px;
+  padding: 0 20px;
+  margin-bottom: 25px;
   position: relative;
 }
 
 .filter-group:nth-child(2) {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
+  padding: 25px 20px;
+  padding-bottom: 18px;
 }
 
 .filter-group__list {
@@ -31,7 +34,6 @@
   width: 300px;
   margin-right: -20px;
   align-items: center;
-  margin-bottom: 35px;
 }
 
 .filter-group__title {
@@ -42,6 +44,7 @@
   display: block;
   padding: 0 20px;
   margin-left: -20px;
+  margin-bottom: 36px;
 }
 
 .filter-group__title::after {
@@ -51,47 +54,95 @@
   background-color: @basic_green;
   content: "";
   position: absolute;
-  top: 40px;
+  top: 10px;
   left: 0;
   z-index: -1;
+}
+
+.filter-group__list--additional {
+  margin-top: -6px;
+  gap: 12px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .filter-group__title {
+    max-width: 182px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .filter-group__title {
     font-size: 36px;
     line-height: 36px;
+    margin-left: -40px;
+    padding: 0 40px;
+    margin-bottom: 76px;
   }
 
   .filter-group {
-    padding: 25px 70px;
+    padding: 0 70px;
+    margin-bottom: 72px;
+  }
+
+  .filter-group__list {
+    gap: 20px;
   }
 
   .filter-group:nth-child(2) {
-    border: none;
+    width: 574px;
+    border: 1px solid #e7e7e7;
+    padding: 30px 28px;
+    margin-left: 70px;
+    margin-top: 52px;
+  }
+
+  .filter-group:nth-child(2) .filter-group__list {
+    gap: 24px;
   }
 
   .filter-group__list--additional {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 221px 221px;
     row-gap: 42px;
+    column-gap: 123px;
+    margin-top: -16px;
+    margin-bottom: -10px;
   }
 
   .filter-group__title::after {
     width: @tablet-width;
+    top: 24px;
   }
 }
 
+/*___________________________________________________*/
 @media (min-width: @desktop-width) {
   .filter-group {
     padding: 25px 110px;
+    margin-bottom: 20px;
+  }
+
+  .filter-group__list {
+    gap: 20px;
   }
 
   .filter-group__list--additional {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 220px 220px 220px 220px;
+    gap: 104px;
+    margin-top: -10px;
+    margin-bottom: 6px;
+  }
+
+  .filter-group__title {
+    margin-bottom: 72px;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .filter-group__title::after {
     width: @desktop-width;
+    top: 44px;
   }
 
   .filter-group:nth-child(-n+2) {
@@ -99,9 +150,12 @@
   }
 
   .filter-group:nth-child(2) {
+    width: 514px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 110px;
+    top: -28px;
+    border: 1px solid #e7e7e7;
+    padding: 25px 28px;
   }
 
   .filter-group:nth-child(3) .filter-group__list {

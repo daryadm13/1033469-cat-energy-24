@@ -1,6 +1,5 @@
 .filter {
   text-transform: uppercase;
-  margin-top: 14px;
   padding: 0;
   position: relative;
 }
@@ -17,7 +16,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 16px;
   text-transform: uppercase;
   color: @special_dark-grey;
   min-width: none;
@@ -33,7 +32,7 @@
 
 .filter__input {
   min-width: 0;
-  padding: 13px 15px 13px 15px;
+  padding: 13px 11px 13px 15px;
   border: 1px solid #e7e7e7;
 }
 
@@ -43,8 +42,8 @@
 }
 
 .filter__input--comment {
-  min-height: 150px;
-  width: 250px;
+  min-height: 124px;
+  width: 256px;
 }
 
 @media (min-width: @tablet-width) {
@@ -53,8 +52,14 @@
   }
 
   .filter__input--comment {
-    min-height: 150px;
+    min-height: 134px;
     width: 590px;
+    margin-top: -22px;
+    margin-bottom: -10px;
+  }
+
+  .filter__input {
+    padding: 21px 20px 13px 20px;
   }
 
   .filter__name {
@@ -69,8 +74,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .filter__wrapper {
+    gap: 16px;
+  }
+
+  .filter__input {
+    padding: 21px 20px 13px 20px;
+  }
+
   .filter__input--comment {
-    min-height: 150px;
+    min-height: 160px;
     width: 1180px;
+    padding: 8px 18px;
   }
 }
