@@ -52,9 +52,13 @@
   margin: 13px 0 0 0;
 }
 
+.product__name--other {
+  width: max-content;
+}
+
 @media (min-width: @tablet-width) {
   .product {
-    padding: 161px 38px 39px 38px;
+    padding: 162px 38px 39px 38px;
     background-color: @basic_grey;
     position: relative;
   }
@@ -75,6 +79,7 @@
   .product__properties {
     font-size: 16px;
     line-height: 16px;
+    margin-bottom: 12px;
   }
 
   .product__properties td {
@@ -96,18 +101,24 @@
   .product__properties--other {
     width: auto;
     margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .product__properties--other td {
     border: none;
     min-width: 93px;
     text-align: right;
+    vertical-align: bottom;
+    padding: 0;
+    padding-top: 17px;
   }
 
   .product__name--other {
     text-align: left;
     width: auto;
-    margin: unset;
+    margin: 0;
+    padding: 0;
   }
 }
 
