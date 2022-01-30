@@ -122,6 +122,10 @@
   .main-nav__item--current {
     border-bottom: 2px solid @basic_green;
   }
+
+  .main-nav__list--inner .main-nav__link {
+    font-weight: 400;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -129,9 +133,12 @@
     background: none;
   }
 
-  .main-nav__link--main {
+  .main-nav__link {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .main-nav__link--main {
     color: @white;
   }
 
@@ -140,6 +147,6 @@
   }
 
   .main-nav__list--inner {
-    gap: 44px;
+    gap: 36px;
   }
 }
