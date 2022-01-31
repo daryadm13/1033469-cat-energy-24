@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   padding: 19px 20px 24px 20px;
   align-items: center;
+  justify-content: space-around;
   border-bottom: 1px solid @special_grey-2;
 }
 
@@ -25,7 +26,7 @@
 }
 
 .product__wrapper {
-  width: 140px;
+  min-width: 140px;
   padding: 0;
   margin: 0;
 }
@@ -61,6 +62,7 @@
     padding: 162px 38px 39px 38px;
     background-color: @basic_grey;
     position: relative;
+    text-align: center;
   }
 
   .product__wrapper {
@@ -79,6 +81,7 @@
   .product__properties {
     font-size: 16px;
     line-height: 16px;
+    text-align: left;
     margin-bottom: 12px;
   }
 
@@ -89,11 +92,13 @@
   }
 
   .product__img {
-    position: absolute;
-    bottom: 303px;
-    left: 80px;
     width: 168px;
     height: 200px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 303px;
   }
 
   .product--other {
@@ -132,7 +137,6 @@
   }
 
   .product__img {
-    left: 42px;
     width: 172px;
     height: 196px;
   }

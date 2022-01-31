@@ -22,7 +22,7 @@
         <a href="" class="header__logo cat-energy-logo">
           <img src="img/cat-energy-logo-text.svg" alt="Cat Energy" class="header__logo-text" width="101" height="18">
         </a>
-        <nav class="header__main-nav main-nav main-nav--opened main-nav--js">
+        <nav class="header__main-nav main-nav main-nav--closed main-nav--js">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -129,10 +129,16 @@
           <p class="stats__cost"> <span>Затраты на питание:</span> <span>15 000 РУБ.</span> </p>
         </div>
         <div class="example__results results">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/example-cat-tablet.png 1x, img/example-cat-tablet@2x.png 2x">
-            <img src="img/example-cat-mobile.png" srcset="img/example-cat-mobile@2x.png 2x" alt="Кот Борис" class="results__pic" width="280" height="232">
-          </picture>
+          <div class="results__pics">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
+              <img src="img/example-cat-mobile.png" srcset="img/example-cat-mobile@2x.png 2x" alt="Кот Борис" class="results__pic results__pic--before" width="280" height="232">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+              <img src="img/example-cat-mobile.png" srcset="img/example-cat-mobile@2x.png 2x" alt="Кот Борис" class="results__pic results__pic--after" width="280" height="232">
+            </picture>
+          </div>
           <div class="results__slider">
             <span>было</span>
             <span>стало</span>
@@ -148,12 +154,12 @@
             приглашаем <br> к сотрудничеству дилеров!
           </p>
           <address class="location__address">
-            <span>
+            <div>
               ул. Большая Конюшенная, д. 19/8
-            </span>
-            <span>
+            </div>
+            <div>
               Санкт-Петербург
-            </span>
+            </div>
           </address>
         </div>
         <picture>
