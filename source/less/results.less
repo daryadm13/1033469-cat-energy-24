@@ -1,7 +1,13 @@
 .results {
   background: none;
+  position: relative;
+  display: flex;
+}
+
+.results__wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .results__slider {
@@ -13,6 +19,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 auto;
 }
 
 .results__pics {
@@ -29,18 +36,20 @@
     background: #eaeaea;
     height: 462px;
     text-align: center;
+    position: relative;
   }
 
-  .results__slider {
-    display: none;
+  .results__wrapper {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -170px;
   }
 
   .results__pics {
     display: flex;
     justify-content: center;
     width: 100%;
-    position: relative;
-    top: -170px;
   }
 
   .results__pic--after {
@@ -65,7 +74,7 @@
     z-index: -1;
   }
 
-  .results__pics {
+  .results__wrapper {
     position: relative;
     top: -180px;
     left: 320px;

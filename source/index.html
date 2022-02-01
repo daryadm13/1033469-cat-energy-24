@@ -162,19 +162,26 @@
           <p class="stats__cost"> <span>Затраты на питание:</span> <span>15 000 РУБ.</span> </p>
         </div>
         <div class="example__results results">
-          <div class="results__pics">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
-              <img src="img/example-cat-mobile.png" srcset="img/example-cat-mobile@2x.png 2x" alt="Кот Борис" class="results__pic results__pic--before" width="280" height="232">
-            </picture>
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
-              <img src="img/example-cat-mobile.png" srcset="img/example-cat-mobile@2x.png 2x" alt="Кот Борис" class="results__pic results__pic--after" width="280" height="232">
-            </picture>
-          </div>
-          <div class="results__slider">
-            <span>было</span>
-            <span>стало</span>
+          <div class="results__wrapper">
+            <div class="results__pics">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
+                <img src="img/example-cat-mobile.png" srcset="img/example-cat-mobile@2x.png 2x" alt="Кот Борис" class="results__pic results__pic--before" width="280" height="232">
+              </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+                <img src="img/example-cat-mobile.png" srcset="img/example-cat-mobile@2x.png 2x" alt="Кот Борис" class="results__pic results__pic--after" width="280" height="232">
+              </picture>
+            </div>
+            <div class="results__slider slider">
+              <div>было</div>
+              <div class="slider__bar">
+                  <button class="slider__toggle">
+                    <span class="visually-hidden">Изменить состояние</span>
+                  </button>
+              </div>
+              <div>стало</div>
+            </div>
           </div>
         </div>
       </section>
@@ -195,15 +202,14 @@
             </div>
           </address>
         </div>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/location-desktop.jpg 1x, img/location-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/location-tablet.jpg 1x, img/location-tablet@2x.jpg 2x">
-          <img class="location__map" src="img/location.jpg" srcset="img/location@2x.jpg 2x" alt="Cat Energy на карте" width="320" height="362">
-        </picture>
+        <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6086980667958!2d30.323118!3d59.938635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4c0a3fb57fbdb242!2zNTnCsDU2JzE5LjEiTiAzMMKwMTknMjMuMiJF!5e0!3m2!1sen!2sru!4v1643744792990!5m2!1sen!2sru"
+          width="320" height="362" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+        </iframe>
       </section>
       <section class="contacts">
         <a href="index.html" class="contacts__logo cat-energy-logo">
           <img src="img/cat-energy-logo-text.svg" alt="Логотип Cat Energy" class="cat-energy-logo-text" width="128" height="24">
+
         </a>
         <div class="contacts__socials socials">
           <ul class="socials__list">
