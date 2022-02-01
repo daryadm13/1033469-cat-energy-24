@@ -39,6 +39,29 @@
   display: none;
 }
 
+.description__item-pic {
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  background-color: @basic_green;
+  background-image: url("../img/icon_leaf.svg");
+  background-size: 30px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.description__item-pic--tub {
+  background-image: url("../img/icon_tub.svg");
+}
+
+.description__item-pic--eat {
+  background-image: url("../img/icon_eat.svg");
+}
+
+.description__item-pic--alarm {
+  background-image: url("../img/icon_alarm.svg");
+}
+
 @media (min-width: @tablet-width) {
   .description {
     padding: 0 30px;
@@ -97,6 +120,6 @@
 
   .description__list {
     display: flex;
-    gap: 80px;
+    justify-content: space-between;
   }
 }
