@@ -10,7 +10,7 @@
   border-bottom: 1px solid #d9d9d9;
   margin: 0;
   padding: 27px 20px 40px 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -29,17 +29,22 @@
   margin: 0 auto;
   margin-top: 36px;
   padding: 0;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 280px;
   height: 290px;
-  background-image: url("../img/catalog-promo-background.jpg");
+  background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 100%, rgba(255, 255, 255, 0.85) 0%), url("../img/catalog-promo-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 @media (min-resolution: 2dppx) {
   .catalog__promotion {
-    background-image: url("../img/catalog-promo-background@2x.jpg");
+    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 100%, rgba(255, 255, 255, 0.85) 0%), url("../img/catalog-promo-background@2x.jpg");
+    background-size: contain;
   }
 }
 
@@ -51,7 +56,6 @@
   line-height: 20px;
   text-align: center;
   color: @white;
-  padding-top: 190px;
 }
 
 @media (min-width: @tablet-width) {
@@ -73,19 +77,23 @@
   }
 
   .catalog__promotion {
-    width: 100%;
+    width: 707px;
     height: 200px;
     margin-top: 66px;
-    background-image: url("../img/catalog-promo-background-tablet.jpg");
+    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 100%, rgba(255, 255, 255, 0.85) 0%), url("../img/catalog-promo-background-tablet.jpg");
+    background-size: contain;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
     background-color: @basic_green;
-    display: flex;
     margin-bottom: 76px;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   @media (min-resolution: 2dppx) {
     .catalog__promotion {
-      background-image: url("../img/catalog-promo-background-tablet@2x.jpg");
+      background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 100%, rgba(255, 255, 255, 0.85) 0%), url("../img/catalog-promo-background-tablet@2x.jpg");
+      background-size: contain;
     }
   }
 
@@ -97,8 +105,6 @@
     font-size: 16px;
     line-height: 20px;
     text-align: left;
-    margin: auto 0;
-    padding-left: 290px;
   }
 }
 
@@ -121,20 +127,20 @@
     position: absolute;
     top: 54px;
     right: 110px;
-    background-image: url("../img/catalog-promo-background-desktop.jpg");
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 100%, rgba(255, 255, 255, 0.85) 0%), url("../img/catalog-promo-background-desktop.jpg");
+    background-size: contain;
   }
 
   @media (min-resolution: 2dppx) {
     .catalog__promotion {
-      background-image: url("../img/catalog-promo-background-desktop@2x.jpg");
+      background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 100%, rgba(255, 255, 255, 0.85) 0%), url("../img/catalog-promo-background-desktop@2x.jpg");
+      background-size: contain;
     }
   }
 
   .catalog__promo-text {
-    padding: 0;
-    margin-top: 185px;
-    margin-left: 41px;
-    margin-right: 43px;
     text-align: center;
   }
 }

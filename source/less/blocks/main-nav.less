@@ -50,7 +50,7 @@
 
 .main-nav__link {
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -69,9 +69,9 @@
   &:active {
     color: #000000;
     border-bottom: 2px solid @basic_green;
+    outline: none;
   }
 }
-
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .main-nav__wrapper {
     display: none;
@@ -135,16 +135,37 @@
     line-height: 30px;
   }
 
-  .main-nav__link--main {
-    font-weight: 400;
-    color: @white;
-  }
-
   .main-nav__item--main-current {
     border-color: @white;
   }
 
   .main-nav__list--inner {
     gap: 44px;
+  }
+
+  .main-nav__item--current .main-nav__link--main {
+    border-bottom: 2px solid @white;
+  }
+
+  .main-nav__link--main {
+    font-weight: 400;
+    color: @white;
+
+    &:hover {
+      color: @white;
+      opacity: 0.6;
+    }
+
+    &:focus {
+      color: @white;
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: @white;
+      opacity: 1;
+      border-bottom: 2px solid @white;
+      outline: none;
+    }
   }
 }

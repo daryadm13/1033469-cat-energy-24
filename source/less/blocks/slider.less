@@ -18,8 +18,12 @@
   background: @basic_green;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
 }
 
+.slider__text {
+  border-bottom: 1px dotted @special_grey;
+}
 
 @media (min-width: @tablet-width) {
   .slider__bar {
@@ -37,8 +41,20 @@
     background: @white;
     border: 1px solid @special_grey;
     box-sizing: border-box;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     left: 50%;
     top: -14px;
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active,
+    &:focus {
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+      border-color: @basic_green;
+      outline: none;
+    }
   }
 
   .slider__toggle::before {
