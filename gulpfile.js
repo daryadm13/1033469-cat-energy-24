@@ -38,20 +38,20 @@ export const html = () => {
 // Images
 
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg,webp}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg,webp}')
     .pipe(gulp.dest('build/img'))
 }
 
 // SVG
 
 const svg = () => {
-  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
