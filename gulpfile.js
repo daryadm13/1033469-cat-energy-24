@@ -35,14 +35,6 @@ export const html = () => {
     .pipe(gulp.dest('build'));
 }
 
-// Scripts
-
-const scripts = () => {
-  return gulp.src('source/js/script.js')
-    .pipe(gulp.dest('build/js'))
-    .pipe(browser.stream());
-}
-
 // Images
 
 const optimizeImages = () => {
@@ -66,7 +58,7 @@ const svg = () => {
 
 // Copy
 
-const copy = () => {
+const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
@@ -122,10 +114,7 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
-    svg,
-    sprite,
-    createWebp
+    svg
   ),
 );
 
@@ -139,7 +128,6 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
     svg
   ),
   gulp.series(
