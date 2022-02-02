@@ -44,7 +44,7 @@ const optimizeImages = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg,webp}')
+  return gulp.src(['source/img/**/*.{png,jpg,webp}', 'source/img/icons/*.svg'])
     .pipe(gulp.dest('build/img'))
 }
 
@@ -62,6 +62,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/manifest.webmanifest',
   ], {
     base: 'source'
   })
