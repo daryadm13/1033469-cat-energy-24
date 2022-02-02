@@ -11,8 +11,9 @@
   color: @special_dark-grey;
 }
 
-.filter__input::-webkit-input-placeholder {
-  font-family: "Oswald", sans-serif;
+.filter__input::-webkit-input-placeholder,
+.filter__input::-moz-placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -32,7 +33,7 @@
 }
 
 .filter__input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -42,9 +43,34 @@
   min-width: 0;
   padding: 13px 11px 13px 15px;
   border: 1px solid #e7e7e7;
+
+  &:hover {
+    border: 1px solid @special_grey;
+    outline: none;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid @special_dark-grey;
+    outline: none;
+  }
+
+  &:focus + .filter__pic {
+    stroke: @basic_green;
+  }
+
+  &:focus:invalid {
+    border: 2px solid @status_error;
+    outline: none;
+  }
+
+  &:focus:invalid + .filter__pic {
+    stroke: @status_error;
+  }
 }
 
 .filter__pic {
+  stroke: @special_dark-grey-2;
   position: absolute;
   right: 10px;
 }
@@ -74,7 +100,8 @@
     line-height: 30px;
   }
 
-  .filter__input::-webkit-input-placeholder {
+  .filter__input::-webkit-input-placeholder,
+  .filter-input::-moz-placeholder {
     font-size: 20px;
     line-height: 30px;
   }

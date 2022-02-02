@@ -26,14 +26,25 @@
     color: @special_dark-grey;
   }
 
-  &:active .contacts__logo-pic {
+  &:active .contacts__logo-pic,
+  &:active .contacts__logo-text {
     opacity: 0.3;
+    outline: none;
   }
 }
 
 .contacts__academy {
   min-height: 78px;
 }
+
+.contacts__logo-pic {
+  fill: @special_grey-3;
+
+  &--fb {
+    stroke: @special_grey-3;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .contacts {

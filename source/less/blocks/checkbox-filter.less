@@ -25,6 +25,11 @@
   background-size: 18px 14px;
 }
 
+.checkbox-filter__input:disabled + .checkbox-filter__mark,
+.checkbox-filter__input:disabled ~ .checkbox-filter__name {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .checkbox-filter__mark {
     width: 38px;

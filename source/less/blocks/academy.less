@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.academy__text-link {
+.academy__link {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -12,6 +12,11 @@
   line-height: 18px;
   color: @special_dark-grey;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 .academy__logo-link {
@@ -22,5 +27,6 @@
 @media (min-width: @tablet-width) {
   .academy__text-link {
     margin-right: 22px;
+    width: fit-content;
   }
 }

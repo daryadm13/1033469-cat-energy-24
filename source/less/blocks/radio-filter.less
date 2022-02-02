@@ -31,6 +31,11 @@
   content: "";
 }
 
+.radio-filter__input:disabled + .radio-filter__mark,
+.radio-filter__input:disabled ~ .radio-filter__name {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .radio-filter__mark {
     width: 38px;
