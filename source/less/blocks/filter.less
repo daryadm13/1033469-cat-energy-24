@@ -32,6 +32,10 @@
   position: relative;
 }
 
+/*.filter__input:required {
+  border: 1px solid #e7e7e7;
+}*/
+
 .filter__input {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -43,9 +47,34 @@
   min-width: 0;
   padding: 13px 11px 13px 15px;
   border: 1px solid #e7e7e7;
+
+  &:hover {
+    border: 1px solid @special_grey;
+    outline: none;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid @special_dark-grey;
+    outline: none;
+  }
+
+  &:focus + .filter__pic {
+    stroke: @basic_green;
+  }
+
+  &:focus:invalid {
+    border: 2px solid @status_error;
+    outline: none;
+  }
+
+  &:focus:invalid + .filter__pic {
+    stroke: @status_error;
+  }
 }
 
 .filter__pic {
+  stroke: @special_dark-grey-2;
   position: absolute;
   right: 10px;
 }
