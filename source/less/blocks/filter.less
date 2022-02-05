@@ -12,7 +12,8 @@
 }
 
 .filter__input::-webkit-input-placeholder,
-.filter__input::-moz-placeholder {
+.filter__input::-moz-placeholder,
+.filter__input:-moz-placeholder {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -20,7 +21,17 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @special_dark-grey;
+  opacity: 1;
   min-width: none;
+}
+
+.filter__input::-webkit-outer-spin-button,
+.filter__input::-webkit-inner-spin-button{
+  display: none;
+}
+
+.filter__input[type=number] {
+  -moz-appearance:textfield;
 }
 
 .filter__wrapper {
@@ -78,6 +89,7 @@
 .filter__input--comment {
   min-height: 124px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
@@ -104,6 +116,7 @@
   .filter-input::-moz-placeholder {
     font-size: 20px;
     line-height: 30px;
+    color: @special_dark-grey;
   }
 }
 
