@@ -4,7 +4,7 @@
   background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 100%, rgba(255, 255, 255, 1) 0%), url("../img/background-cat.png"), linear-gradient(90deg, #505054 50%, #444348 50%);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: auto 320px;
+  background-size: auto 302px;
   color: @white;
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
@@ -16,12 +16,12 @@
     background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 100%, rgba(255, 255, 255, 1) 0%), url("../img/background-cat@2x.png"), linear-gradient(90deg, #505054 50%, #444348 50%);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: auto 320px;
+    background-size: auto 302px;
   }
 }
 
 .promo__heading {
-  margin-top: 27px auto 0 auto;
+  margin: 27px auto 0 auto;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
@@ -62,6 +62,8 @@
   }
 
   .promo__heading {
+    padding-top: 0;
+    margin-top: 0;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -82,7 +84,7 @@
     min-height: 54px;
     width: 244px;
     position: absolute;
-    top: 280px;
+    top: 232px;
     left: 121px;
   }
 
@@ -94,25 +96,30 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 190px;
     min-height: 560px;
     background: none;
     position: static;
     text-align: left;
+    margin-bottom: -10px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1440px;
   }
 
   .promo__heading {
     padding-left: 0;
-    margin-top: 36px;
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 
   .promo__heading::after {
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 694px;
     right: 0;
     top: 0;
@@ -136,14 +143,16 @@
 
   .promo__slogan {
     padding-left: 0;
-    margin-top: 32px;
+    margin-top: 42px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .promo__pic {
     position: absolute;
     width: 552px;
     height: 499px;
-    left: 558px;
+    left: calc((100vw - 1440px) / 2 + 564px);
     top: 141px;
   }
 

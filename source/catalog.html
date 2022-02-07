@@ -289,14 +289,17 @@
             </div>
             <a class="product__order button" >Заказать</a>
           <li class="main-products__item product show-more">
-            <img src="img/plus.svg" alt="Плюс" class="product__img show-more__img" width="30" height="30">
+            <svg class="product__img show-more__img" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2"/>
+              <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2"/>
+            </svg>
             <h3 class="show-more__header">Показать еще 100500 товаров</h3>
             <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
             <a class="show-more__button button">Показать все</a>
           </li>
         </ul>
       </section>
-      
+
       <section class="catalog__products other-products">
         <h2 class="other-products__header">Дополнительные товары</h2>
         <ul class="catalog__list other-products__list">
@@ -353,6 +356,7 @@
     <footer class="footer">
       <section class="location">
         <h2 class="visually-hidden"> Адреc Cat Energy </h2>
+        <div class="wrapper">
         <div class="location__text location__text--inner">
           <p class="location__invitation">
             приглашаем <br> к сотрудничеству дилеров!
@@ -370,47 +374,50 @@
           width="320" height="362" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
         </iframe>
       </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a href="index.html" class="contacts__logo cat-energy-logo">
-          <img src="img/cat-energy-logo-text.svg" alt="Логотип Cat Energy" class="cat-energy-logo-text" width="128" height="24">
-        </a>
-        <div class="contacts__socials socials">
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__button socials__button--vk contacts__link" href="#">
-                <svg class="contacts__logo-pic contacts__logo-pic--socials contacts__logo-pic--vk" width="23" height="16">
-                  <use xlink:href="#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__button socials__button--ig contacts__link" href="#">
-                <svg class="contacts__logo-pic contacts__logo-pic--socials contacts__logo-pic--ig" width="16" height="16">
-                  <use xlink:href="#icon-ig"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__button socials__button--fb contacts__link" href="#">
-                <svg class="contacts__logo-pic contacts__logo-pic--socials  contacts__logo-pic--fb" width="22" height="22">
-                  <use xlink:href="#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts__academy academy">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link contacts__link">
-            <svg class="contacts__logo-text" width="113" height="16">
-              <use xlink:href="#htmlacademy-text"></use>
-            </svg>
-            <svg class="contacts__logo-pic contacts__logo-pic--academy"  width="27" height="34">
-              <use xlink:href="#htmlacademy-logo"></use>
-            </svg>
+      <div class="wrapper wrapper--contacts">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a href="index.html" class="contacts__logo cat-energy-logo">
+            <img src="img/cat-energy-logo-text.svg" alt="Логотип Cat Energy" class="cat-energy-logo-text" width="128" height="24">
+
           </a>
-        </div>
-      </section>
+          <div class="contacts__socials socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__button socials__button--vk contacts__link" href="#">
+                  <svg class="contacts__logo-pic contacts__logo-pic--socials contacts__logo-pic--vk" width="23" height="16">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__button socials__button--ig contacts__link" href="#">
+                  <svg class="contacts__logo-pic contacts__logo-pic--socials contacts__logo-pic--ig" width="16" height="16">
+                    <use xlink:href="#icon-ig"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__button socials__button--fb contacts__link" href="#">
+                  <svg class="contacts__logo-pic contacts__logo-pic--socials  contacts__logo-pic--fb" width="22" height="22">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__academy academy">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link contacts__link">
+              <svg class="contacts__logo-text academy__text-link" width="113" height="16">
+                <use xlink:href="#htmlacademy-text"></use>
+              </svg>
+              <svg class="contacts__logo-pic contacts__logo-pic--academy academy__logo-link"  width="27" height="34">
+                <use xlink:href="#htmlacademy-logo"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+      </div>
     </footer>
 
 

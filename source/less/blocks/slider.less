@@ -1,5 +1,5 @@
 .slider__bar {
-  margin: 0 13px;
+  margin: 0 18px;
   position: relative;
   width: 86px;
   height: 14px;
@@ -23,6 +23,8 @@
 
 .slider__text {
   border-bottom: 1px dotted @special_grey;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -32,6 +34,8 @@
     background: #dcdcdc;
     border-radius: 6px;
     border: none;
+    margin-left: 23px;
+    margin-right: 23px;
   }
 
   .slider__toggle {
@@ -42,7 +46,7 @@
     border: 1px solid @special_grey;
     box-sizing: border-box;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
-    left: 50%;
+    left: 45%;
     top: -14px;
 
     &:hover {
@@ -68,5 +72,10 @@
     position: absolute;
     top: 12px;
     left: 12px;
+  }
+
+  .slider__text {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

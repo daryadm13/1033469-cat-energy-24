@@ -11,9 +11,19 @@
   color: @special_dark-grey;
 }
 
-.filter__input::-webkit-input-placeholder,
-.filter__input::-moz-placeholder,
-.filter__input:-moz-placeholder {
+.filter__input::-webkit-input-placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @special_dark-grey;
+  opacity: 1;
+  min-width: none;
+}
+
+.filter__input::placeholder {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -26,12 +36,12 @@
 }
 
 .filter__input::-webkit-outer-spin-button,
-.filter__input::-webkit-inner-spin-button{
+.filter__input::-webkit-inner-spin-button {
   display: none;
 }
 
 .filter__input[type=number] {
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 .filter__wrapper {
@@ -52,7 +62,7 @@
   text-transform: uppercase;
   color: @special_dark-grey;
   min-width: 0;
-  padding: 13px 11px 13px 15px;
+  padding: 10px 11px 10px 15px;
   border: 1px solid #e7e7e7;
 
   &:hover {
@@ -62,8 +72,8 @@
 
   &:focus,
   &:active {
-    border: 2px solid @special_dark-grey;
-    outline: none;
+    border: 1px solid @special_dark-grey;
+    outline: 1px solid @special_dark-grey;
   }
 
   &:focus + .filter__pic {
@@ -71,8 +81,8 @@
   }
 
   &:focus:invalid {
-    border: 2px solid @status_error;
-    outline: none;
+    border: 1px solid @status_error;
+    outline: 1px solid @status_error;
   }
 
   &:focus:invalid + .filter__pic {
@@ -87,7 +97,7 @@
 }
 
 .filter__input--comment {
-  min-height: 124px;
+  min-height: 148px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -98,9 +108,9 @@
   }
 
   .filter__input--comment {
-    min-height: 134px;
+    min-height: 174px;
     margin-top: -22px;
-    margin-bottom: -10px;
+    margin-bottom: 20px;
   }
 
   .filter__input {
@@ -112,8 +122,13 @@
     line-height: 30px;
   }
 
-  .filter__input::-webkit-input-placeholder,
-  .filter-input::-moz-placeholder {
+  .filter__input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 30px;
+    color: @special_dark-grey;
+  }
+
+  .filter-input::placeholder {
     font-size: 20px;
     line-height: 30px;
     color: @special_dark-grey;
@@ -130,7 +145,14 @@
   }
 
   .filter__input--comment {
-    min-height: 160px;
+    min-height: 170px;
     padding: 8px 18px;
+    margin-bottom: 20px;
+  }
+
+  .filter-input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+    color: @special_dark-grey;
   }
 }

@@ -1,6 +1,9 @@
 .types {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1440px;
 }
 
 .types__list {
@@ -110,7 +113,7 @@
 @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
   .types__item {
     display: block;
-    padding: 77px 316px 57px 52px;
+    padding: 80px 316px 57px 52px;
     position: relative;
   }
 
@@ -130,6 +133,7 @@
     position: absolute;
     left: unset;
     right: 28px;
+    top: 90px;
   }
 
   .types__name {
@@ -168,7 +172,7 @@
   }
 
   .types__item {
-    padding: 42px 52px 59px 52px;
+    padding: 46px 52px 59px 52px;
     grid-template-columns: 162px 1fr;
   }
 
